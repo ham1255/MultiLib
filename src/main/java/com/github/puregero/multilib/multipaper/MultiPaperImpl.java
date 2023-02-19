@@ -177,4 +177,14 @@ public class MultiPaperImpl implements MultiLibImpl {
     public DataStorageImpl getDataStorage() {
         return dataStorage;
     }
+
+    @Override
+    public void setEntityAsFake(Entity entity) {
+        entity.setFake();
+    }
+
+    @Override
+    public boolean isFakeEntity(Entity entity) {
+        return entity.isFake();
+    }
 }

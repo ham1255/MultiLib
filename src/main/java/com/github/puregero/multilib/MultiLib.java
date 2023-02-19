@@ -349,4 +349,20 @@ public class MultiLib {
     public static DataStorageImpl getDataStorage() {
         return get().getDataStorage();
     }
+
+    /**
+     * Sets an entity as fake entity (for npc plugins etc)
+     */
+    public static void setEntityAsFake(Entity entity) {
+        get().setEntityAsFake(entity);
+    }
+
+    /**
+     * @return if entity is fake
+     */
+    public static boolean isFakeEntity(Entity entity) {
+        return get().isFakeEntity(entity);
+    }
+
+
 }

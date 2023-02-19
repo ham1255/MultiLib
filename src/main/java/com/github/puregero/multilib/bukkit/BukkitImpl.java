@@ -169,4 +169,14 @@ public class BukkitImpl implements MultiLibImpl {
     public DataStorageImpl getDataStorage() {
         return dataStorage;
     }
+
+    @Override
+    public void setEntityAsFake(Entity entity) {
+        // do nothing
+    }
+
+    @Override
+    public boolean isFakeEntity(Entity entity) {
+        return false;
+    }
 }

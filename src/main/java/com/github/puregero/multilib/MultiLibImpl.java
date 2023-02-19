@@ -89,4 +89,9 @@ public interface MultiLibImpl {
     }
 
     DataStorageImpl getDataStorage();
+
+    void setEntityAsFake(Entity entity);
+
+    boolean isFakeEntity(Entity entity);
+
 }
